@@ -62,12 +62,13 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 24px;
+  padding: 10px;
   color: white;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 1px;
   background-color: #1A1D2D;
+  justify-content: center;
 }
 
 .sidebar-logo-icon {
