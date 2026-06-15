@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import { 
-  Home, 
-  Users, 
-  ShoppingCart, 
-  Landmark, 
-  FileText, 
-  CreditCard, 
-  Files, 
-  PenTool, 
-  Settings, 
-  Package, 
-  Search, 
-  Plus, 
-  Bell, 
-  ChevronDown, 
+import {
+  Home,
+  Users,
+  ShoppingCart,
+  Landmark,
+  FileText,
+  CreditCard,
+  Files,
+  PenTool,
+  Settings,
+  Package,
+  Search,
+  Plus,
+  Bell,
+  ChevronDown,
   ChevronRight,
   ChevronLeft,
   Download,
@@ -30,11 +30,7 @@ export default function App() {
       <aside className="sidebar">
         <div className="sidebar-logo">
           <div className="sidebar-logo-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="white"/>
-              <path d="M2 17L12 22L22 17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M2 12L12 17L22 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+            <img class="logo-image" src="./public/logo.png" alt="" />
           </div>
           TRIONOVA
         </div>
@@ -137,7 +133,7 @@ export default function App() {
               Ganesh Electricals
               <ChevronDown size={16} />
             </div>
-            
+
             <div className="topbar-actions">
               <button className="icon-btn">
                 <Plus size={20} />
@@ -177,7 +173,7 @@ export default function App() {
                 <div className="stat-value">1,248</div>
               </div>
             </div>
-            
+
             <div className="stat-card">
               <div className="stat-icon-wrapper stat-icon-danger">
                 <Package size={24} />
@@ -216,14 +212,14 @@ export default function App() {
                 <div className="filter-dropdown">
                   All Payments <ChevronDown size={16} />
                 </div>
-                <div className="filter-dropdown" style={{color: 'var(--text-muted)'}}>
+                <div className="filter-dropdown" style={{ color: 'var(--text-muted)' }}>
                   All Categories <ChevronDown size={16} />
                 </div>
-                <div className="filter-dropdown" style={{color: 'var(--text-muted)'}}>
+                <div className="filter-dropdown" style={{ color: 'var(--text-muted)' }}>
                   All Statuses <ChevronDown size={16} />
                 </div>
               </div>
-              <button className="btn-primary" style={{padding: '8px 16px', fontSize: '13px'}}>
+              <button className="btn-primary" style={{ padding: '8px 16px', fontSize: '13px' }}>
                 <Download size={16} />
                 Export CSV
               </button>
@@ -233,7 +229,7 @@ export default function App() {
               <table>
                 <thead>
                   <tr>
-                    <th style={{textAlign: 'center'}}>S.No</th>
+                    <th style={{ textAlign: 'center' }}>S.No</th>
                     <th>Item Name</th>
                     <th>SKU</th>
                     <th>Category</th>
@@ -246,7 +242,7 @@ export default function App() {
                 <tbody>
                   {[1, 2, 3, 4, 5].map((item, index) => (
                     <tr key={item}>
-                      <td style={{textAlign: 'center'}}>{item}</td>
+                      <td style={{ textAlign: 'center' }}>{item}</td>
                       <td>{index === 1 ? 'LED Panel' : 'Copper Wire 12/2'}</td>
                       <td>{index === 1 ? 'LP-24-FLAT' : 'CW-122-THHN'}</td>
                       <td>{index === 1 ? 'Lighting' : 'Wiring'}</td>
@@ -274,7 +270,7 @@ export default function App() {
                   5 <ChevronDown size={14} />
                 </div>
               </div>
-              
+
               <div className="pagination-controls">
                 <button className="page-btn"><ChevronLeft size={16} /></button>
                 <button className="page-btn active">1</button>
@@ -297,7 +293,7 @@ export default function App() {
                 <X size={20} />
               </button>
             </div>
-            
+
             <div className="modal-body">
               <div className="form-group">
                 <label>Item Name</label>

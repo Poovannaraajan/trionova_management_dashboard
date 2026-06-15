@@ -1,19 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+.logo-image {
+  height: 32px;
+  width: auto;
+  border-radius: 8px;
+  background: #d7d9dd;
+  padding: 6px;
+}
+
 :root {
-  --sidebar-bg: #1A1D2D;
+  --sidebar-bg: rgb(14 14 58);
   --sidebar-hover: #292E46;
   --sidebar-active: #2F65F0;
   --sidebar-text: #8E99B8;
   --sidebar-text-active: #FFFFFF;
-  
+
   --bg-color: #F8FAFC;
   --card-bg: #FFFFFF;
   --border-color: #E2E8F0;
-  
+
   --text-main: #1E293B;
   --text-muted: #64748B;
-  
+
   --primary: #2563EB;
   --primary-hover: #1D4ED8;
   --danger: #EF4444;
@@ -59,6 +67,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 1px;
+  background-color: #1A1D2D;
 }
 
 .sidebar-logo-icon {
@@ -79,7 +88,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 24px;
+  padding: 8px 24px;
   cursor: pointer;
   transition: all 0.2s ease;
   color: var(--sidebar-text);
@@ -290,7 +299,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .stat-icon-wrapper {
@@ -332,7 +341,7 @@ body {
   background: var(--card-bg);
   border-radius: 12px;
   border: 1px solid var(--border-color);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .table-filters {
@@ -476,8 +485,15 @@ td {
 }
 
 @keyframes modalIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .modal-header {
