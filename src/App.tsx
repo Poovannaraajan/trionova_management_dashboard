@@ -79,7 +79,7 @@ export default function App() {
       <aside className="sidebar">
         <div className="sidebar-logo">
           <div className="sidebar-logo-icon">
-            <img class="logo-image" src="./public/logo.png" alt="" />
+            <img className="logo-image" src="./public/logo.png" alt="" />
           </div>
           TRIONOVA
         </div>
