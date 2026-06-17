@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './InventoryDashboard.css';
 import { Package, ChevronDown, Download, Edit2, ChevronLeft, ChevronRight, Plus, X } from 'lucide-react';
 
 export default function InventoryDashboard() {
