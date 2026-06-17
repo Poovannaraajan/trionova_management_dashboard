@@ -11,7 +11,7 @@ A modern, responsive management dashboard application built with React, TypeScri
 
 ## Tech Stack
 
-- **Framework**: React 18
+- **Framework**: React
 - **Language**: TypeScript
 - **Bundler**: Vite
 - **Icons**: Lucide React
