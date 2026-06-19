@@ -20,6 +20,7 @@ import {
 import InventoryDashboard from './components/InventoryDashboard';
 import HomeDashboard from './components/HomeDashboard';
 import ClientDashboard from './components/ClientDashboard';
+import PaymentReceivedDashboard from './components/PaymentReceivedDashboard';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -63,7 +64,12 @@ export default function App() {
             <span className="nav-sub-item">Sales Orders</span>
             <span className="nav-sub-item">Client Invoice</span>
             <span className="nav-sub-item">Delivery Challan</span>
-            <span className="nav-sub-item">Payment Received</span>
+            <span 
+              className={`nav-sub-item ${activeTab === 'payment-received' ? 'active' : ''}`}
+              onClick={() => setActiveTab('payment-received')}
+            >
+              Payment Received
+            </span>
             <span className="nav-sub-item">Credit Notes</span>
           </div>
 
@@ -164,6 +170,7 @@ export default function App() {
         {activeTab === 'home' && <HomeDashboard />}
         {activeTab === 'inventory' && <InventoryDashboard />}
         {activeTab === 'client' && <ClientDashboard />}
+        {activeTab === 'payment-received' && <PaymentReceivedDashboard />}
       </div>
     </div>
   );
