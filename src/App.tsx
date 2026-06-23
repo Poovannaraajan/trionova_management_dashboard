@@ -22,6 +22,7 @@ import HomeDashboard from './components/HomeDashboard';
 import ClientDashboard from './components/ClientDashboard';
 import PaymentReceivedDashboard from './components/PaymentReceivedDashboard';
 import ClientInvoiceDashboard from './components/ClientInvoiceDashboard';
+import DocumentsDashboard from './components/DocumentsDashboard';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -112,7 +113,10 @@ export default function App() {
               <span>Expenses</span>
             </div>
           </div>
-          <div className="nav-item">
+          <div 
+            className={`nav-item ${activeTab === 'documents' ? 'active' : ''}`}
+            onClick={() => setActiveTab('documents')}
+          >
             <div className="nav-item-content">
               <Files size={18} />
               <span>Documents</span>
@@ -178,6 +182,7 @@ export default function App() {
         {activeTab === 'client' && <ClientDashboard />}
         {activeTab === 'client-invoice' && <ClientInvoiceDashboard />}
         {activeTab === 'payment-received' && <PaymentReceivedDashboard />}
+        {activeTab === 'documents' && <DocumentsDashboard />}
       </div>
     </div>
   );
